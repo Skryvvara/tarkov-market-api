@@ -1,15 +1,25 @@
 {
   "name": "eft-market-api",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "follow-redirects": "^1.13.0",
+    "axios": "^0.21.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "node index.test.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xDarkyne/tarkov-market-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^0.21.0"
-  }
+  "bugs": {
+    "url": "https://github.com/xDarkyne/tarkov-market-api/issues"
+  },
+  "homepage": "https://github.com/xDarkyne/tarkov-market-api#readme"
 }
