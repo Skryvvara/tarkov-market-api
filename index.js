@@ -3,9 +3,6 @@ const axios = require('axios').default;
 class EftMarketAPI {
     constructor(apikey) {
         this.apikey = apikey;
-        this.headers = {
-            'x-api-key': this.apikey
-        }
     }
 
     async GetAllItems() {
