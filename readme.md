@@ -10,7 +10,6 @@ You can get your APIKey here https://tarkov-market.com/dev/api
 
 ## How to Use
 ```js
-{
   const EFTMarketApi = require('eft-market-api').default;
   const api = new EFTMarketApi('yourapikey');
 
@@ -25,5 +24,4 @@ You can get your APIKey here https://tarkov-market.com/dev/api
   async function itemByUID(uid) {
     let data = await api.GetItemByUID(uid);
   }
-}
 ```

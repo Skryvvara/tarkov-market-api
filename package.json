@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/xDarkyne/tarkov-market-api.git"
   },
-  "keywords": [],
+  "keywords": ["tarkov", "Escape from Tarkov", "eft", "api", "eft-market"],
   "author": "",
   "license": "ISC",
   "bugs": {
