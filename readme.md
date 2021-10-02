@@ -1,7 +1,6 @@
 ## Disclaimer
 This nodejs package is **NOT** an official package by the eft market team.
-I created this package for personal projects so the code might not be the
-best possible solution. 
+I created this package for personal projects.
 
 Pull Requests welcome.
 
