@@ -149,3 +149,4 @@ perfectly representing the tarkov market object structure:
 <a name="license"></a>
 
 ## License
+[MIT](https://mit-license.org/)
