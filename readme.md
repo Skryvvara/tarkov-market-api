@@ -1,26 +1,57 @@
+<div align=center>
+  <h1>EFT-Market-API</h1>
+  <p>a tiny package to utilize EFT markets api in JavaScript/TypeScript.</p>
+</div>
+
+## Table of Contents
+- [ Disclaimer ](#disclaimer)
+- [ How to Use ](#how-to-use)
+- [ License ](#license)
+
+<a name="disclaimer"></a>
+
 ## Disclaimer
 This nodejs package is **NOT** an official package by the eft market team.
 I created this package for personal projects.
 
-Pull Requests welcome.
+You can get your API key [here](https://tarkov-market.com/dev/api).
 
-You can get your APIKey here https://tarkov-market.com/dev/api
 **Notice:** to get your api key you must pledge the eft market developer on patreon.
 
+This package and the new update 
+
+<a name="how-to-use"></a>
+
 ## How to Use
-```js
-  const EFTMarketApi = require('eft-market-api').default;
-  const api = new EFTMarketApi('yourapikey');
+```ts
+import { EftMarketAPI } from "eft-market-api";
+const api = new EftMarketApi('yourapikey');
 
-  async function allItems() {
-    let data = await api.GetAllItems();
-  }
+api.GetAllItems()
+  .then(data => {
+    //do something
+  })
+  .catch(error => {
+    console.error(error);
+  });
 
-  async function itemByName(name) {
-    let data = await api.GetItemByName(name);
-  }
+api.GetItemByName("name")
+  .then(data => {
+    //do something
+  })
+  .catch(error => {
+    console.error(error);
+  });
 
-  async function itemByUID(uid) {
-    let data = await api.GetItemByUID(uid);
-  }
+api.GetItemByUID("uid")
+  .then(data => {
+    //do something
+  })
+  .catch(error => {
+    console.error(error);
+  });
 ```
+
+<a name="license"></a>
+
+## License

@@ -1,25 +1,38 @@
 {
   "name": "eft-market-api",
-  "version": "1.1.1",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "follow-redirects": "^1.13.0",
-    "axios": "^0.21.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.2.0",
+  "description": "A TypeScript wrapper for the tarkov-market-api.",
+  "keywords": [
+    "tarkov",
+    "Escape from Tarkov",
+    "eft",
+    "api",
+    "eft-market",
+    "xdarkyne",
+    "darkyne"
+  ],
+  "author": "xdarkyne",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xDarkyne/tarkov-market-api.git"
   },
-  "keywords": ["tarkov", "Escape from Tarkov", "eft", "api", "eft-market"],
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://darkyne.com",
   "bugs": {
     "url": "https://github.com/xDarkyne/tarkov-market-api/issues"
   },
-  "homepage": "https://github.com/xDarkyne/tarkov-market-api#readme"
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "",
+    "build": "tsc"
+  },
+  "license": "MIT"
 }
