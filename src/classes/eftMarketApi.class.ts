@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 import { Item } from "..";
 
 export class EftMarketAPI {
@@ -14,12 +14,12 @@ export class EftMarketAPI {
    * @returns Promise of array of type Item
    */
   public GetAllItems(): Promise<Item[]> {
-    return new Promise<any>((resolve, reject) => {
+    return new Promise<Item[]>((resolve, reject) => {
       let url = `https://tarkov-market.com/api/v1/items/all?x-api-key=${this.apikey}`;
       try {
         this.GetData<Item[]>(url)
-        .then(res => resolve(res))
-        .catch(error => { throw error});
+        .then((res: Item[]) => resolve(res))
+        .catch((error: any) => { throw error});
       }
       catch(error: any) {
         reject(error);
@@ -39,8 +39,8 @@ export class EftMarketAPI {
       let url = `https://tarkov-market.com/api/v1/item?q=${name}&x-api-key=${this.apikey}`;
       try {
         this.GetData<Item[]>(url)
-        .then(res => resolve(res))
-        .catch(error => { throw error});
+        .then((res: Item[]) => resolve(res))
+        .catch((error: any) => { throw error});
       }
       catch(error: any) {
         reject(error);
@@ -59,8 +59,8 @@ export class EftMarketAPI {
       let url = `https://tarkov-market.com/api/v1/item?uid=${uid}&x-api-key=${this.apikey}`;
       try {
         this.GetData<Item>(url)
-        .then(res => resolve(res))
-        .catch(error => { throw error});
+        .then((res: Item) => resolve(res))
+        .catch((error: any) => { throw error});
       }
       catch(error: any) {
         reject(error);
@@ -70,10 +70,10 @@ export class EftMarketAPI {
 
   protected GetData<T>(url: string): Promise<T> {
     return new Promise<any>((resolve, reject) => {
-      axios.get(url)
-        .then(res => res.data)
-        .then(res => resolve(res))
-        .catch(error => reject(error));
+      axios.get<T>(url)
+        .then((res: AxiosResponse) => res.data)
+        .then((res: T) => resolve(res))
+        .catch((error: any) => reject(error));
     });
   }
 }
