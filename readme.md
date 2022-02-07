@@ -31,7 +31,7 @@ Pull Requests Wellcome.
 
 ## Description
 
-This project is a TypeScript/JavaScript wrapper for the [tarkov market api](https://tarkov-market.com/dev/api). I created this back in the day when I didn't know how to consume restful apis. Although I know it know I decided to not delete this project but keep it for nostalgic reasons.
+This project is a TypeScript/JavaScript wrapper for the [tarkov market api](https://tarkov-market.com/dev/api). I created this back in the day when I didn't know how to consume restful apis. Although I know it now I decided to not delete this project but keep it for nostalgic reasons.
 
 <a name="how-to-use"></a>
 
